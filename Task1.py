@@ -9,8 +9,8 @@
 import random
 
 # Constants definition section
-LOWER_SIZE_BOUND = 10
-UPPER_SIZE_BOUND = 10
+LOWER_SIZE_BOUND = 6
+UPPER_SIZE_BOUND = 6
 RANDOM_TREES = 1
 Id = 0
 
@@ -118,15 +118,12 @@ class random_binary_tree():
 	def get_nodes(self):
 		return self.nodes
 
-	# Return the First node of the random Tree in inorder
-	def transverse(self, root):
-		nodeList = self.get_nodes()
-		rootNode = root
-		print(rootNode.Id)
-		if rootNode.get_lChild() is not None:
-			self.transverse(rootNode.get_lChild())
-		if rootNode.get_rChild() is not None:
-			self.transverse(rootNode.get_rChild())
+	# Transverse the binary tree using recursion
+	def rTransverse(self, rootNode):
+		if rootNode is not None:
+			print(rootNode.Id)
+			self.rtransverse(rootNode.get_lChild())
+			self.rtransverse(rootNode.get_rChild())
 		return None
 
 """
