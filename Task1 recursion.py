@@ -9,11 +9,11 @@
 import random
 
 # Constants definition section
-LOWER_SIZE_BOUND = 6
-UPPER_SIZE_BOUND = 6
-RANDOM_TREES = 1
+LOWER_SIZE_BOUND = 50
+UPPER_SIZE_BOUND = 100
+RANDOM_TREES = 100
 Id = 0
-
+n = 0
 
 """
 -------------------------------------
@@ -31,7 +31,6 @@ class binary_node()	:
 		self.Id = Id
 		self.leftChild = None
 		self.rightChild = None
-		self.visited = False
 
 	# Returns the left Child node
 	def get_lChild(self):
@@ -79,6 +78,8 @@ class random_binary_tree():
 
 	def __init__(self):
 		self.nodes = self.create_randomTree()
+		self.total = 0
+		self.total_first = 0
 
 	def create_randomTree(self):
 		# We create and empty list with every node, one with the left child capables and other with the right child capables
@@ -119,11 +120,23 @@ class random_binary_tree():
 		return self.nodes
 
 	# Transverse the binary tree using recursion
-	def rTransverse(self, rootNode):
+	def inorder_first(self, rootNode):
+		while rootNode.get_lChild() is not None:
+			self.total_first = self.total_first + 1
+			rootNode = rootNode.get_lChild()				# We add 1 step for every left child visited
+		return None
+
+	# Transverse the binary tree using recursion
+	def transverse(self, rootNode):
 		if rootNode is not None:
-			print(rootNode.Id)
-			self.rtransverse(rootNode.get_lChild())
-			self.rtransverse(rootNode.get_rChild())
+			if rootNode.get_lChild() is not None:
+				self.total = self.total + 1					# We add 1 step for every left child visited
+				self.transverse(rootNode.get_lChild())
+				self.total = self.total + 1 				# We add 1 step for going back to root
+			if rootNode.get_rChild() is not None:
+				self.total = self.total + 1 				# We add 1 step for every right child visited (1 for visiting the root and 1 for going right
+				self.transverse(rootNode.get_rChild())
+				self.total = self.total + 1 				# We add 1 step for going back to root
 		return None
 
 """
@@ -141,12 +154,38 @@ while len(randomTrees) < RANDOM_TREES:
 	randomTrees.append(tree)
 
 # Prints the whole tree structure
+"""
+print ("--------------------------")
+print ("  	TREE STRUCTURE")
+
 for node in randomTrees[0].nodes:
 	print ("--------------------------")
-	print ("Nodo con Id %d" % node.Id)
+	print ("Node Id %d" % node.Id)
 	if node.get_lChild():
-		print ("Hijo izquierdo con Id %d" % node.get_lChild().Id)
+		print ("	Left Child:   Id %d" % node.get_lChild().Id)
 	if node.get_rChild():
-		print ("Hijo derecho con Id %d" % node.get_rChild().Id)
+		print ("	Right Child:  Id %d" % node.get_rChild().Id)
+print ("--------------------------")
+"""
 
-randomTrees[0].transverse(randomTrees[0].get_nodes()[0])
+# Open file for writing the results in CSV format
+f = open("Output.txt", "w")
+f.write("RANDOM TREE ID;NUMBER OF NODES IN TREE;TOTAL COST OF INORDER_NEXT OPERATION\n")
+
+# Prints the whole tree structure
+for tree in randomTrees:
+	n = n + 1
+	tree.inorder_first(tree.get_nodes()[0])
+	tree.transverse(tree.get_nodes()[0])
+
+	inorderNext_Cost = tree.total# - tree.total_first
+
+	f.write("%d;%d;%d\n" % (n,len(tree.get_nodes()),inorderNext_Cost))
+
+	print("\n		TREE N°%d" % n)
+	print("===================================================")
+	print("NUMBER OF NODES IN TREE:                 %d  NODES" % len(tree.get_nodes()))
+	print("TOTAL COST OF INORDER_NEXT OPERATION:   %d  STEPS" % inorderNext_Cost)
+	print("===================================================")	
+
+f.close()
