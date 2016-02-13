@@ -1,51 +1,202 @@
-% 			Preface Area of the Document
-%-----------------------------------------------------------------------------
-
-\documentclass{article}
 
 
-% 				Title Header Structure
-%------------------------------------------------------------------------------
-\title{My first document}
-\date{2013-09-01}
-\author{John Doe}
+%----------------------------------------------------------------------------------------
+% 			I. PREFACE AREA OF THE DOCUMENT
+%----------------------------------------------------------------------------------------
 
+\documentclass[12p]{article}
 
-% 		Begin of the Written Section of the Document
-%------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+% 			 II.  BEGIN OF THE DOCUMENT
+%----------------------------------------------------------------------------------------
+
 
 \begin{document}
 
-  \pagenumbering{gobble}		% Delete the page number for the title page
-  \maketitle				% Allow the creation of the title structure
+
+%----------------------------------------------------------------------------------------
+%			  PAGE 1 : TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+
+\pagenumbering{gobble}		% Delete the page number for the title page
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+ 
+%----------------------------------------------------------------------------------------
+%			Heading Section of the title
+%----------------------------------------------------------------------------------------
+
+\textsc{\Huge University of Helsinki}\\[3cm] % Name of your university/college
+
+%----------------------------------------------------------------------------------------
+%				Title section
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \Huge \bfseries PreAssignment 2016}\\[0.4cm] % Set the title of the document
+\HRule \\[2.5cm]
+ 
+%----------------------------------------------------------------------------------------
+%				Author Section
+%----------------------------------------------------------------------------------------
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+\LARGE \emph{Author:}\\
+\LARGE Andres Medina\\[0.05cm] % Your name
+\textsc{\Large (UAF 1608168)}\\[3cm] % Your name
+
+%----------------------------------------------------------------------------------------
+%				Date Section
+%----------------------------------------------------------------------------------------
+
+{\LARGE \today}\\[3cm] % Date, change the \today to a set date if you want to be precise
+
+ 
+%----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+
+%----------------------------------------------------------------------------------------
+%				END OF THE TITLE PAGE
+%----------------------------------------------------------------------------------------
+
 
   \newpage 				% Creates a new page
 
+
+%----------------------------------------------------------------------------------------
+%				PAGE 2:  	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+  \tableofcontents 			% Creates the table of contents page
+
+
+
+  \newpage 				% Creates a new page
+
+
+%----------------------------------------------------------------------------------------
+%				PAGE 3:  	TASK 1
+%----------------------------------------------------------------------------------------
+
+
   \pagenumbering{arabic}		% Restores the page number (could also be used with roman for roman numbers)
 
+
+%----------------------------------------------------------------------------------------
+%				Title section
+%----------------------------------------------------------------------------------------
+
+\begin{center}
+
+  \textsc{\LARGE Preassignment - Task 1}\\[1cm] % Title of the second page
+
+\end{center}
+
+%----------------------------------------------------------------------------------------
+%				(1) First section
+%----------------------------------------------------------------------------------------
  
-  \section{Section}			% Subsection of a document
+  \section{Introduction}			% Subsection of a document
 
-  Hello World!
+%   First Paragraph
+  \large The first task of the preassignment consists in experimentally test that the amortized complexity of $(n-1)$ calls to \textbf {inorder\_next} in a binary tree is $2(n-1)$.
 
-  \subsection{Subsection}
+\bigskip
 
-  Structuring a document is easy!
+%   Second Paragraph
+ \large To achieve this task, the following strategy was followed:
 
-  \subsubsection{Subsubsection}
+\begin{enumerate}
 
-  More text.
+  \item First, we create a program that generates random Binary Trees. This allows us to had a test set in which we prove the current hypothesis.
+  \item After creating the random Binary Tree generator, we create a second program that allows us to transverse the binary tree in inorder \textit{(inorder means, first visiting the left node, then the root and finally the right node)}. The program also returns the amount of steps involved in this operation.
+  \item By using both programs, we made a table that compare the amount of steps taken to transverse every binary tree in comparison with the number of nodes of each tree.
+  \item Finally, we made a plot with the data of the table and by using linear regression, we get the equation corresponding to that line plot. We expect that the slope of that line plot should be something bigger or equal to $2(n-1)$ \textit{(it should be bigger or equal because the amortized complexity correspond to an upper bound of the actual complexity of an algorithm)}.
 
-  \paragraph{Paragraph}
+\bigskip
 
-  Some more text.
+The results obtained in the analysis are described in the results section of this paper.
 
-  \subparagraph{Subparagraph}
+\end{enumerate}
 
-  Even more text.
 
-  \section{Another section}
+%----------------------------------------------------------------------------------------
+%				(2) Second section
+%----------------------------------------------------------------------------------------
 
+  \section{Materials and Methods}
+In this section, we will describe the tools and the logic used to solve every single step that composed the task 1 of this preassignment. This section include topics like the programming framework used to solve this task and also what was the logic applied to develop those programs.
+
+
+%----------------------------------------------------------------------------------------
+%				(2.1) First Subsection
+%----------------------------------------------------------------------------------------
+
+  \subsection{Programming Tools}
+For developing the required programs we choose to use the following tools:
+
+\begin{itemize}
+  \item Python 3.5.1 as the programming language
+  \item Github as a repository tool
+  \item Sublime Text as the code editor
+\end{itemize}
+
+In addition, the random library of python was used for accomplish the tasks related with randomness.
+
+
+%----------------------------------------------------------------------------------------
+%				(2.2) Second Subsection
+%----------------------------------------------------------------------------------------
+
+  \subsection{Programming Logic}
+The two programs involved in this task were programmed by using OOP paradigm.
+Considering the fact that the task 1 of the preassignment involves the creation of two different programs, we choose to explain the logic of each program in a different subsection. 
+
+
+  \subsubsection{Creating a Random Binary Tree}
+
+The creation of the binary tree was implemented by developing two different classes: a binary node class and a binary tree class. The binary node class contains 3 different attributes, an Id, a reference to a left child node and a reference to a right child node while the binary tree class contains only two attributes, a list of binary nodes and the total cost of traversing the tree in inorder. By using this two classes, creating a random binary tree was possible. Also when every binary tree is created, a random tree setting method is called so that every tree created has a different and also random structure.
+
+\bigskip
+
+The random tree setting method work as follows: 
+\begin{itemize}
+  \item First, a  integer number between 50 and 100 is choose randomly. This number will represent the number of nodes of the corresponding binary tree
+  \item Second, a left-right flag is set by choosing a random integer number between 0 and 1
+  \item Then, after the left-right flag is set, a random node of the tree is chosen. Only the nodes that doesn't already have the corresponding child are candidates for this random choice. \textit{For example, if the left-right flag is set to left, only nodes that doesn't have left childs are possible candidates of this random choice. Conversely, if the left-right flag is set to right, only nodes that doesn't have right childs are possible candidates}
+  \item Finally, the corresponding child is created in the randomly chosen node of the tree
+\end{itemize}
+
+The described logic repeats until the number of nodes of the binary tree is reached.
+
+  \subsubsection{Traversing a Binary Tree in inorder}
+The traversing of a binary tree in inorder can be made mainly in two different ways: by using recursion and by not using recursion. In this case, we choose to implement this method using recursion as this method allow to achieve a smaller and cleaner code and also allow us to avoid the implementation of a link between a child node and it's parent node.
+
+\bigskip
+
+The idea of this implementation is mainly the following:
+\begin{itemize}
+  \item We start by applying this method to the root node of the tree
+  \item If the root node has a left child, then we call again the traverse\_inorder method but this time we pass the left child node as an argument to the method
+  \item When the corresponding node has no left child node, then we ask if the node has a right child. If the node has a right child, then we call again the traverse\_inorder method but this time we pass the right child node as an argument to the method
+  \item After no more left and right child are found, the traverse\_inorder method returns. Of course we should consider a logic for counting the corresponding steps in each call of the method so that when the method ends, we have the total amount of steps already calculated.
+\end{itemize}
+
+In the next section we will show and analyze the results of the above implementations.
+
+%----------------------------------------------------------------------------------------
+%				(3) Third section
+%----------------------------------------------------------------------------------------
+
+  \section{Results}
 
 \end{document}
 
