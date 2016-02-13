@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.12)  13 FEB 2016 02:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.12)  13 FEB 2016 04:44
 entering extended mode
 **"C:/Users/3710119/Desktop/MEDINA/Documentos postulacion Master/University of 
 Helsinki/Task 1/Latex Files/task1.tex"
@@ -25,29 +25,88 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+("C:\Users\3710119\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphic
+x.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\3710119\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.
+sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Users\3710119\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphic
+s.sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\3710119\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.st
+y"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Users\3710119\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\graphic
+s.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+("C:\Users\3710119\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftex-def\pdfte
+x.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Users\3710119\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwa
+rerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Users\3710119\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcm
+ds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
 
 LaTeX Warning: Unused global option(s):
     [12p].
 
-(task1.aux)
+(task1.aux
+
+LaTeX Warning: Label `table:nonlin' multiply defined.
+
+)
 \openout1 = `task1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
- [1
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
 
-{C:/Users/3710119/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (task1.to
-c
+("C:\Users\3710119\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.
+mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count88
+\scratchdimen=\dimen105
+\scratchbox=\box26
+\nofMPsegments=\count89
+\nofMParguments=\count90
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count91
+\MPscratchDim=\dimen106
+\MPnumerator=\count92
+\makeMPintoPDFobject=\count93
+\everyMPtoPDFconversion=\toks16
+) [1
+
+{C:/Users/3710119/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(task1.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -58,49 +117,59 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [1]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 110.
+(Font)              <12> on input line 115.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 110.
+(Font)              <8> on input line 115.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 110.
+(Font)              <6> on input line 115.
  [1]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 147.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 152.
 
 
 ("C:\Users\3710119\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 147.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 152.
 [2]
-Overfull \hbox (0.81975pt too wide) in paragraph at lines 190--191
+Overfull \hbox (0.81975pt too wide) in paragraph at lines 195--196
 []\OT1/cmr/m/n/12 After no more left and right child are found, the tra-verse[]
 inorder
  []
 
-[3] [4] (task1.aux) ) 
+[3] [4] <images/Graph2.png, id=29, 291.33844pt x 225.09094pt>
+File: images/Graph2.png Graphic file (type png)
+
+<use images/Graph2.png>
+Package pdftex.def Info: images/Graph2.png used on input line 304.
+(pdftex.def)             Requested size: 291.33772pt x 225.09038pt.
+ [5] [6 <./images/Graph2.png>] (task1.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 267 strings out of 493634
- 3355 string characters out of 3134423
- 56604 words of memory out of 3000000
- 3718 multiletter control sequences out of 15000+200000
+ 1170 strings out of 493634
+ 16089 string characters out of 3134423
+ 76458 words of memory out of 3000000
+ 4586 multiletter control sequences out of 15000+200000
  10399 words of font info for 36 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 23i,4n,18p,736b,199s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/3710119/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/3710119/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/3710119/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/37
-10119/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.p
-fb><C:/Users/3710119/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb><C:/Users/3710119/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmr12.pfb><C:/Users/3710119/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/3710119/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/3710119/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on task1.pdf (6 pages, 124409 bytes).
+ 27i,7n,19p,736b,200s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/3710119/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><C:/Users/3710119/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmbx12.pfb><C:/Users/3710119/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/3710119/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/371011
+9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C
+:/Users/3710119/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr12.pfb><C:/Users/3710119/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr17.pfb><C:/Users/3710119/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/3710119/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on task1.pdf (8 pages, 151015 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
+ 68 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

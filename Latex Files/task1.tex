@@ -6,6 +6,9 @@
 
 \documentclass[12p]{article}
 
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
 %----------------------------------------------------------------------------------------
 % 			 II.  BEGIN OF THE DOCUMENT
 %----------------------------------------------------------------------------------------
@@ -30,7 +33,8 @@
 %			Heading Section of the title
 %----------------------------------------------------------------------------------------
 
-\textsc{\Huge University of Helsinki}\\[3cm] % Name of your university/college
+\textsc{\Huge University of Helsinki}\\[2cm] % Name of your university/college
+\textsc{\LARGE Computer Science Department}\\[0.5cm] % Major heading such as course name
 
 %----------------------------------------------------------------------------------------
 %				Title section
@@ -40,6 +44,7 @@
 { \Huge \bfseries PreAssignment 2016}\\[0.4cm] % Set the title of the document
 \HRule \\[2.5cm]
  
+
 %----------------------------------------------------------------------------------------
 %				Author Section
 %----------------------------------------------------------------------------------------
@@ -197,6 +202,107 @@ In the next section we will show and analyze the results of the above implementa
 %----------------------------------------------------------------------------------------
 
   \section{Results}
+When the two generated programs are run, an output table is created. This table includes three columns:
+\begin{enumerate}
+  \item \textbf{Binary Tree ID } Represents the Id of the binary tree
+  \item \textbf{Number of nodes of the Tree } Represents the number of nodes of the binary tree 
+  \item \textbf{Total steps of inorder traverse } Represents the amounts of steps involved in the inorder traverse operation
+\end{enumerate}
+
+The results obtained in this computation are shown in the following table:
+
+%----------------------------------------------------------------------------------------
+%				Table section
+%----------------------------------------------------------------------------------------
+
+\footnotesize
+\begin{table}[ht]
+\caption{Binary Tree Traverse Results part1} 					% title of Table
+\centering 									% used for centering table
+\begin{tabular}{c c c} 							% centered columns (3 columns)
+\hline\hline 									%inserts double horizontal lines
+Tree Id & Number of Nodes & Total Steps\\ [0.5ex] 			% inserts table
+%heading
+\hline % inserts single horizontal line
+1 & 83 & 164 \\ 								% inserting body of the table
+2 & 94 & 186 \\
+3 & 69 & 136 \\
+4 & 99 & 196 \\
+5 & 53 & 104 \\
+6 & 63 & 124 \\
+7 & 72 & 142 \\
+8 & 61 & 120 \\
+9 & 55 & 108 \\
+10 & 90 & 178 \\
+11 & 81 & 160 \\
+12 & 74 & 146 \\
+13 & 92 & 182 \\
+14 & 85 & 168 \\
+15 & 75 & 148 \\
+16 & 66 & 130 \\
+17 & 95 & 188 \\
+18 & 64 & 126 \\
+19 & 71 & 140 \\
+20 & 95 & 188 \\
+21 & 52 & 102 \\
+22 & 77 & 152 \\
+23 & 53 & 104 \\
+24 & 84 & 166 \\
+25 & 80 & 158 \\
+\hline %inserts single line
+\end{tabular}
+\label{table:nonlin} % is used to refer this table in the text
+\end{table}
+
+\begin{table}[ht]
+\caption{Binary Tree Traverse Results part2}				% title of Table
+\centering 									% used for centering table
+\begin{tabular}{c c c} 							% centered columns (3 columns)
+\hline\hline 									%inserts double horizontal lines
+Tree Id & Number of Nodes & Total Steps\\ [0.5ex] 			% inserts table
+%heading
+\hline % inserts single horizontal line
+26 & 70 & 138 \\
+27 & 95 & 188 \\
+28 & 68 & 134 \\
+29 & 88 & 174 \\
+30 & 98 & 194 \\
+31 & 99 & 196 \\
+32 & 63 & 124 \\
+33 & 66 & 130 \\
+34 & 59 & 116 \\
+35 & 94 & 186 \\
+36 & 85 & 168 \\
+37 & 59 & 116 \\
+38 & 68 & 134 \\
+39 & 93 & 184 \\
+40 & 62 & 122 \\
+41 & 75 & 148 \\
+42 & 100 & 198 \\
+43 & 92 & 182 \\
+44 & 82 & 162 \\
+45 & 84 & 166 \\
+46 & 58 & 114 \\
+47 & 63 & 124 \\
+48 & 69 & 136 \\
+49 & 51 & 100 \\
+50 & 66 & 130 \\ [1ex] 						% [1ex] adds vertical space
+\hline %inserts single line
+\end{tabular}
+\label{table:nonlin} % is used to refer this table in the text
+\end{table}
+
+  \newpage 				% Creates a new page
+  \newpage 				% Creates a new page
+
+%----------------------------------------------------------------------------------------
+%				Graph section
+%----------------------------------------------------------------------------------------
+
+\large Also when we plot the results shown in the previous tables into a line graph, we obtain the following image:
+
+\includegraphics{Graph2}
+
 
 \end{document}
 
