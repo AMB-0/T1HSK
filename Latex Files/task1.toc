@@ -5,3 +5,4 @@
 \contentsline {subsubsection}{\numberline {2.2.1}Creating a Random Binary Tree}{2}
 \contentsline {subsubsection}{\numberline {2.2.2}Traversing a Binary Tree in inorder}{3}
 \contentsline {section}{\numberline {3}Results}{4}
+\contentsline {section}{\numberline {4}Discussion}{5}

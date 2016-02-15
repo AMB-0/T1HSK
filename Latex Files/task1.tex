@@ -112,7 +112,7 @@
   \section{Introduction}			% Subsection of a document
 
 %   First Paragraph
-  \large The first task of the preassignment consists in experimentally test that the amortized complexity of $(n-1)$ calls to \textbf {inorder\_next} in a binary tree is $2(n-1)$.
+  \large The first task of the preassignment consists in experimentally test that the amortized complexity of $(n-1)$ calls to \textbf {inorder\_next} in a binary tree is $2(x-1)$.
 
 \bigskip
 
@@ -121,10 +121,10 @@
 
 \begin{enumerate}
 
-  \item First, we create a program that generates random Binary Trees. This allows us to had a test set in which we prove the current hypothesis.
+  \item First, we created a program that generates random Binary Trees. This allows us to had a test set in which we prove the current hypothesis.
   \item After creating the random Binary Tree generator, we create a second program that allows us to transverse the binary tree in inorder \textit{(inorder means, first visiting the left node, then the root and finally the right node)}. The program also returns the amount of steps involved in this operation.
   \item By using both programs, we made a table that compare the amount of steps taken to transverse every binary tree in comparison with the number of nodes of each tree.
-  \item Finally, we made a plot with the data of the table and by using linear regression, we get the equation corresponding to that line plot. We expect that the slope of that line plot should be something bigger or equal to $2(n-1)$ \textit{(it should be bigger or equal because the amortized complexity correspond to an upper bound of the actual complexity of an algorithm)}.
+  \item Finally, we made a plot with the data of the table and by using linear regression, we get the equation corresponding to that line plot. We expect that the slope of that line plot should be something bigger or equal to $2(x-1)$ \textit{(it should be bigger or equal because the amortized complexity correspond to an upper bound of the actual complexity of an algorithm)}.
 
 \bigskip
 
@@ -217,8 +217,8 @@ The results obtained in this computation are shown in the following table:
 
 \footnotesize
 \begin{table}[ht]
-\caption{Binary Tree Traverse Results part1} 					% title of Table
-\centering 									% used for centering table
+\caption{Binary Tree traverse results using 50 different trees}	% title of Table
+%\centering 									% used for centering table
 \begin{tabular}{c c c} 							% centered columns (3 columns)
 \hline\hline 									%inserts double horizontal lines
 Tree Id & Number of Nodes & Total Steps\\ [0.5ex] 			% inserts table
@@ -251,12 +251,8 @@ Tree Id & Number of Nodes & Total Steps\\ [0.5ex] 			% inserts table
 25 & 80 & 158 \\
 \hline %inserts single line
 \end{tabular}
-\label{table:nonlin} % is used to refer this table in the text
-\end{table}
-
-\begin{table}[ht]
-\caption{Binary Tree Traverse Results part2}				% title of Table
-\centering 									% used for centering table
+\qquad
+%\centering 									% used for centering table
 \begin{tabular}{c c c} 							% centered columns (3 columns)
 \hline\hline 									%inserts double horizontal lines
 Tree Id & Number of Nodes & Total Steps\\ [0.5ex] 			% inserts table
@@ -286,23 +282,63 @@ Tree Id & Number of Nodes & Total Steps\\ [0.5ex] 			% inserts table
 47 & 63 & 124 \\
 48 & 69 & 136 \\
 49 & 51 & 100 \\
-50 & 66 & 130 \\ [1ex] 						% [1ex] adds vertical space
+50 & 66 & 130 \\ 
 \hline %inserts single line
 \end{tabular}
+
 \label{table:nonlin} % is used to refer this table in the text
 \end{table}
 
   \newpage 				% Creates a new page
-  \newpage 				% Creates a new page
+
+\large By inspecting the results of the table we can clearly see that the amount of steps that takes to traverse a binary tree, directly depends of the amount of nodes that compose that particular binary tree. 
+
+\bigskip
+
+To obtain the equation that describes the relation between the number of nodes and the amount of steps that takes to traverse a binary tree, we decided to plot the data in the table shown previously and use linear regression to obtain the equation. The result of this linear plot is shown in the following image:
 
 %----------------------------------------------------------------------------------------
 %				Graph section
 %----------------------------------------------------------------------------------------
 
-\large Also when we plot the results shown in the previous tables into a line graph, we obtain the following image:
-
 \includegraphics{Graph2}
 
+As we can see, the value of the \textbf{coefficient of determination} also know as $R^2$ is 1. This means that the linear regression line perfectly fits the plotted data. The equation that describes this relation is correspond to $y=2x-2$ where $x$ represents the number of nodes in a binary tree and $y$ represents the amounts of steps that takes to traverse that particular tree in inorder.
+
+\bigskip
+
+We will discuss the meaning of this result in the next section of the text.
+
+%----------------------------------------------------------------------------------------
+%				(3) Forth section
+%----------------------------------------------------------------------------------------
+
+  \section{Discussion}
+
+As we saw in the last section, the amount of steps that takes to traverse a random binary tree in inorder is $2x-2$ where $x$ represents the number of nodes of that particular tree. In this section, we will use this result to test experimentally that the amortized complexity of $(n-1)$ calls of \textbf{inorder\_next} correspond to $2(x-1)$.
+
+\bigskip
+
+To do this task, we need to consider the following information:
+\begin{itemize}
+  \item First, the amortized complexity is an upper bound on total actual complexity. \textit{This means that the amortized complexity is always bigger or equal than the total actual complexity}
+  \item Second, the operation of traverse an entire binary tree with $n$ nodes is exactly the same than call the \textbf{inorder\_next} function $n$ times
+  \item Third, if we do $n$ calls to a function the actual complexity of this operation will always be bigger or equal than the actual complexity of $n-1$ calls to the same function
+\end{itemize}
+
+\bigskip
+\bigskip
+
+Using the above information and also considering the results obtained in the last section, we can state the following:
+\begin{itemize}
+  \item The actual complexity for $n$ calls of \textbf{inorder\_next } can be represented by the equation $2(x-1)$. \textit{where $x$ represents the number of nodes in a binary tree}
+  \item Considering that $n-1$ calls to a function is les expensive than $n$ calls in the same function (in terms of complexity), we can state than \textbf{$2(x-1)$ is an upper bound of the actual complexity of $n-1$ calls}. \textit{This state is based in the fact that $2(x-1)$ will always be bigger or equal than the actual complexity of $n-1$ calls}
+  \item Finally as $2(x-1)$ is an upper bound of the actual complexity of $n-1$ calls to the function \textbf{inorder\_next}, we can also said that $2(x-1)$ \textbf{is a possible value for the amortized complexity of this function}
+\end{itemize}
+
+\bigskip
+
+In conclusion, by collecting data and using the method shown in this paper, we managed to test experimentally that $2(x-1)$ or $2x-2$ is a totally possible value for the amortized complexity of $n-1$ calls of the \textbf{inorder\_next} function.
 
 \end{document}
 
