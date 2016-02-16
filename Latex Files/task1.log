@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.12)  15 FEB 2016 03:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.12)  16 FEB 2016 02:19
 entering extended mode
 **"C:/Users/3710119/Desktop/MEDINA/Documentos postulacion Master/University of 
 Helsinki/Task 1/Latex Files/task1.tex"
@@ -25,6 +25,70 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+("C:\Users\3710119\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.
+sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+
+("C:\Users\3710119\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.
+sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Users\3710119\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.s
+ty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks14
+\ex@=\dimen103
+))
+("C:\Users\3710119\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.s
+ty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+("C:\Users\3710119\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.s
+ty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
 ("C:\Users\3710119\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphic
 x.sty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
@@ -32,7 +96,7 @@ Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 ("C:\Users\3710119\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.
 sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
+\KV@toks@=\toks19
 )
 ("C:\Users\3710119\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphic
 s.sty"
@@ -60,32 +124,32 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 ds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count88
+\Gread@gobject=\count100
 ))
-\Gin@req@height=\dimen103
-\Gin@req@width=\dimen104
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
 )
 ("C:\Users\3710119\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listing
 s.sty"
-\lst@mode=\count89
-\lst@gtempboxa=\box26
-\lst@token=\toks15
-\lst@length=\count90
-\lst@currlwidth=\dimen105
-\lst@column=\count91
-\lst@pos=\count92
-\lst@lostspace=\dimen106
-\lst@width=\dimen107
-\lst@newlines=\count93
-\lst@lineno=\count94
-\lst@maxwidth=\dimen108
+\lst@mode=\count101
+\lst@gtempboxa=\box28
+\lst@token=\toks20
+\lst@length=\count102
+\lst@currlwidth=\dimen114
+\lst@column=\count103
+\lst@pos=\count104
+\lst@lostspace=\dimen115
+\lst@width=\dimen116
+\lst@newlines=\count105
+\lst@lineno=\count106
+\lst@maxwidth=\dimen117
 
 ("C:\Users\3710119\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc
 .sty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count95
-\lst@skipnumbers=\count96
-\lst@framebox=\box27
+\c@lstnumber=\count107
+\lst@skipnumbers=\count108
+\lst@framebox=\box29
 )
 ("C:\Users\3710119\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listing
 s.cfg"
@@ -110,44 +174,39 @@ LaTeX Warning: Unused global option(s):
 (task1.aux)
 \openout1 = `task1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
 
 ("C:\Users\3710119\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.
 mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count97
-\scratchdimen=\dimen109
-\scratchbox=\box28
-\nofMPsegments=\count98
-\nofMParguments=\count99
-\everyMPshowfont=\toks16
-\MPscratchCnt=\count100
-\MPscratchDim=\dimen110
-\MPnumerator=\count101
-\makeMPintoPDFobject=\count102
-\everyMPtoPDFconversion=\toks17
+\scratchcounter=\count109
+\scratchdimen=\dimen118
+\scratchbox=\box30
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count112
+\MPscratchDim=\dimen119
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
+\everyMPtoPDFconversion=\toks22
 )
-\c@lstlisting=\count103
+\c@lstlisting=\count115
  [1
 
 {C:/Users/3710119/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(task1.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 2.
-)
+(task1.toc)
 \tf@toc=\write3
 \openout3 = `task1.toc'.
 
@@ -155,31 +214,25 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ]
 Chapter 1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 113.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 113.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 113.
 [1
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 150.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 151.
 
 
 ("C:\Users\3710119\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 150.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 151.
 [2] [3]
-Overfull \hbox (0.81975pt too wide) in paragraph at lines 193--194
+Overfull \hbox (0.81975pt too wide) in paragraph at lines 194--195
 []\OT1/cmr/m/n/12 After no more left and right child are found, the tra-verse[]
 inorder
  []
 
 
-Overfull \hbox (65.66719pt too wide) in paragraph at lines 220--286
+Overfull \hbox (65.66719pt too wide) in paragraph at lines 221--287
 [][]  [] 
  []
 
@@ -187,135 +240,135 @@ Overfull \hbox (65.66719pt too wide) in paragraph at lines 220--286
 File: images/Graph2.png Graphic file (type png)
 
 <use images/Graph2.png>
-Package pdftex.def Info: images/Graph2.png used on input line 302.
+Package pdftex.def Info: images/Graph2.png used on input line 303.
 (pdftex.def)             Requested size: 291.33772pt x 225.09038pt.
  [5] [6 <./images/Graph2.png>] [7]
-Package color Info: Redefining color red on input line 355.
-Package color Info: Redefining color green on input line 356.
+Package color Info: Redefining color red on input line 356.
+Package color Info: Redefining color green on input line 357.
 
 ("C:\Users\3710119\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang
 1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-Overfull \hbox (85.9187pt too wide) in paragraph at lines 411--412
+Overfull \hbox (85.9187pt too wide) in paragraph at lines 412--413
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [8]
-Overfull \hbox (85.9187pt too wide) in paragraph at lines 421--422
+Overfull \hbox (85.9187pt too wide) in paragraph at lines 422--423
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (125.60858pt too wide) in paragraph at lines 446--447
+Overfull \hbox (125.60858pt too wide) in paragraph at lines 447--448
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][] 
  []
 
 
-Overfull \hbox (29.21887pt too wide) in paragraph at lines 447--448
+Overfull \hbox (29.21887pt too wide) in paragraph at lines 448--449
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (125.60858pt too wide) in paragraph at lines 453--454
+Overfull \hbox (125.60858pt too wide) in paragraph at lines 454--455
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][] 
  []
 
 
-Overfull \hbox (108.59863pt too wide) in paragraph at lines 454--456
+Overfull \hbox (108.59863pt too wide) in paragraph at lines 455--457
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (12.20892pt too wide) in paragraph at lines 456--457
+Overfull \hbox (12.20892pt too wide) in paragraph at lines 457--458
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [9]
-Overfull \hbox (114.26862pt too wide) in paragraph at lines 466--467
+Overfull \hbox (114.26862pt too wide) in paragraph at lines 467--468
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][] 
  []
 
 
-Overfull \hbox (12.20892pt too wide) in paragraph at lines 467--468
+Overfull \hbox (12.20892pt too wide) in paragraph at lines 468--469
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (74.57874pt too wide) in paragraph at lines 470--471
+Overfull \hbox (74.57874pt too wide) in paragraph at lines 471--472
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (119.9386pt too wide) in paragraph at lines 472--473
+Overfull \hbox (119.9386pt too wide) in paragraph at lines 473--474
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (51.8988pt too wide) in paragraph at lines 473--474
+Overfull \hbox (51.8988pt too wide) in paragraph at lines 474--475
 [][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (91.58868pt too wide) in paragraph at lines 474--475
+Overfull \hbox (91.58868pt too wide) in paragraph at lines 475--476
 [][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (125.60858pt too wide) in paragraph at lines 477--478
+Overfull \hbox (125.60858pt too wide) in paragraph at lines 478--479
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (57.56879pt too wide) in paragraph at lines 478--479
+Overfull \hbox (57.56879pt too wide) in paragraph at lines 479--480
 [][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (91.58868pt too wide) in paragraph at lines 479--480
+Overfull \hbox (91.58868pt too wide) in paragraph at lines 480--481
 [][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (0.86896pt too wide) in paragraph at lines 492--493
+Overfull \hbox (0.86896pt too wide) in paragraph at lines 493--494
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (448.7976pt too wide) in paragraph at lines 493--494
+Overfull \hbox (448.7976pt too wide) in paragraph at lines 494--495
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][] 
  []
 
 
-Overfull \hbox (51.8988pt too wide) in paragraph at lines 494--495
+Overfull \hbox (51.8988pt too wide) in paragraph at lines 495--496
 [][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (369.41785pt too wide) in paragraph at lines 495--496
+Overfull \hbox (369.41785pt too wide) in paragraph at lines 496--497
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][] 
  []
 
 
-Overfull \hbox (0.86896pt too wide) in paragraph at lines 496--497
+Overfull \hbox (0.86896pt too wide) in paragraph at lines 497--498
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (675.59692pt too wide) in paragraph at lines 497--498
+Overfull \hbox (675.59692pt too wide) in paragraph at lines 498--499
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
@@ -323,19 +376,19 @@ Overfull \hbox (675.59692pt too wide) in paragraph at lines 497--498
  []
 
 
-Overfull \hbox (51.8988pt too wide) in paragraph at lines 498--499
+Overfull \hbox (51.8988pt too wide) in paragraph at lines 499--500
 [][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (369.41785pt too wide) in paragraph at lines 499--500
+Overfull \hbox (369.41785pt too wide) in paragraph at lines 500--501
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][] 
  []
 
 [10]
-Overfull \hbox (74.57874pt too wide) in paragraph at lines 529--531
+Overfull \hbox (74.57874pt too wide) in paragraph at lines 530--532
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -343,24 +396,24 @@ Overfull \hbox (74.57874pt too wide) in paragraph at lines 529--531
 Missing character: There is no Â in font cmtt9!
 Missing character: There is no ° in font cmtt9!
 
-Overfull \hbox (40.55884pt too wide) in paragraph at lines 532--533
+Overfull \hbox (40.55884pt too wide) in paragraph at lines 533--534
 [][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (80.24872pt too wide) in paragraph at lines 533--534
+Overfull \hbox (80.24872pt too wide) in paragraph at lines 534--535
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (68.90875pt too wide) in paragraph at lines 534--535
+Overfull \hbox (68.90875pt too wide) in paragraph at lines 535--536
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (40.55884pt too wide) in paragraph at lines 535--537
+Overfull \hbox (40.55884pt too wide) in paragraph at lines 536--538
 [][][][][][][][][][][][][][][][][] 
  []
 
@@ -368,32 +421,35 @@ Overfull \hbox (40.55884pt too wide) in paragraph at lines 535--537
 Chapter 2.
 [12
 
-] (task1.aux) ) 
+] [13] [14] [15] (task1.aux) ) 
 Here is how much of TeX's memory you used:
- 2738 strings out of 493634
- 38697 string characters out of 3134423
- 148597 words of memory out of 3000000
- 6131 multiletter control sequences out of 15000+200000
- 11640 words of font info for 41 fonts, out of 3000000 for 9000
+ 3340 strings out of 493634
+ 45746 string characters out of 3134423
+ 158762 words of memory out of 3000000
+ 6715 multiletter control sequences out of 15000+200000
+ 13607 words of font info for 49 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 27i,8n,40p,736b,1616s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/3710119/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmbx10.pfb><C:/Users/3710119/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/3710119/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/3710119/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:
+ 27i,8n,40p,826b,1618s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/3710119/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/3710119/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/3710119/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:
 /Users/3710119/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr10.pfb><C:/Users/3710119/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmr12.pfb><C:/Users/3710119/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/3710119/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/3710119/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/37
-10119/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.p
-fb><C:/Users/3710119/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmtt9.pfb>
-Output written on task1.pdf (14 pages, 195883 bytes).
+/cmmi10.pfb><C:/Users/3710119/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmmi12.pfb><C:/Users/3710119/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/3710119/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/3710119/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/
+3710119/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.
+pfb><C:/Users/3710119/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmr8.pfb><C:/Users/3710119/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb><C:/Users/3710119/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/3710119/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/3710119/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on task1.pdf (17 pages, 230788 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
+ 116 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

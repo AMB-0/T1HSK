@@ -6,6 +6,7 @@
 
 \documentclass[12p]{report}
 
+\usepackage{amsmath}
 \usepackage{graphicx}
 \graphicspath{ {images/} }
 \usepackage[procnames]{listings}
@@ -552,5 +553,116 @@ https://github.com/JokerswildX/T1HSK
 
   \chapter{Preassignment - Task 2}			% Subsection of a document
 
+%----------------------------------------------------------------------------------------
+%				(1) First section
+%----------------------------------------------------------------------------------------
+ 
+  \section{Introduction}			% Subsection of a document
+
+%   First Paragraph
+  \large The second task of the preassignment consists of making an estimation of the amortized analisis of $m1$ calls to push($x$) and $m2$ calls to pop($k$) in a stack data structure. Its important to remember that applying the push($x$) function to a stack, pushes an item $x$ onto the top that particular stack. In contrast, applying the pop($k$) function to a stack allows us to pops $k$ entries of the stack at once. For solving this problem, we also considered an empty initial state of the stack \textit{(this means that the stack has no items pushed into the data structure before applying the first function to it)}. 
+
+\bigskip
+
+The strategy followed to solve this task is described in detail in the following section.
+
+%----------------------------------------------------------------------------------------
+%				(2) Second section
+%----------------------------------------------------------------------------------------
+ 
+  \section{Materials and Methods}			% Subsection of a document
+
+To solve this task, we decide to use the known paradigm of "divide and conquer". 
+
+\bigskip
+
+We already know that the amortized complexity of a whole operation is the sum of the amortized complexities of its stages. Therefore, instead of estimating the total amortized complexity of $m1$ calls to push($x$) and $m2$ calls to pop($k$) we will estimate 2 different amortized complexities:
+\begin{itemize}
+ \item Amortized Complexity of $m1$ calls to push($x$)
+ \item Amortized Complexity of $m2$ calls to pop($k$)
+\end{itemize}
+
+\bigskip
+
+For estimating the above complexities we also need to consider the following equation:
+
+\bigskip
+
+\begin{center}
+\Large
+$a_{i} = t_{i} + \Phi(S_{i}) - \Phi(S_{i-1}) $
+\end{center}
+
+\large
+
+\textit{Where $a_{i}$ represents the amortized complexity of the $i$th call, $t_{i}$ represents the actual worst case complexity of the $i$th call}, $\Phi(S_{i})$ represents the potencial function of the $i$th call and $\Phi(S_{i-1})$ the potencial function of the $(i-1)$th call
+
+\bigskip
+
+In addition to the above equation, we also need to choose a right potencial function ($\Phi(S)$) so that $\Phi(S_{i}) \geq \Phi(S_{i-1})$. This behaviour allows the amortized complexity to work as an upper bound of the total actual complexity of the operation. In the next section, we will use all the above information to estimate the amortized complexity of the sequence of push($x$) and pop($k$) in the stack.
+
+
+%----------------------------------------------------------------------------------------
+%				(3) Third section
+%----------------------------------------------------------------------------------------
+ 
+  \section{Results}			% Subsection of a document
+
+First of all, as we seen in the last section, before even begun estimating the amortized complexity of the sequence of pop and push calls, we need to first choose a right potencial function. \textbf{In this particular case, we decide to choose the potencial function $\Phi(S_{i})$ to be the current number of items in the stack}. This chosen potencial function seems to be adequate as the bigger the number of elements in the stack, the more steps, potencially the operation must do in order to reach the next state. Also, considering that the initial state of the stack is empty, after $n$ operations we know that $\Phi(S_{n}) \geq \Phi(S_{0})$ as no negative index are allowed into a stack.
+
+\bigskip
+
+Having decided the potencial function $\Phi(S)$, the next task is to estimate the amortized complexity for the both considered cases, the $m1$ calls to push($x$) and the $m2$ calls to pop($k$). Let's begin with the $m1$ calls to push($x$):
+
+\bigskip
+
+\begin{enumerate}
+\item \underline{$m1$ calls to push($x$)}:
+
+Let's start by estimating the push($x$) amortized complexity. If the $i$th call in the stack is a push($x$) and the stack has $s$ elements in it, we have the following estimation:
+
+\Large
+\begin{align}
+\nonumber
+a_{i} &= t_{i} + \Phi(S_{i}) - \Phi(S_{i-1}) \\
+\nonumber
+a_{i} &= 1 + (s+1) - (s) \\
+\nonumber
+a_{i} &= 2
+\end{align}
+
+\large
+So we can conclude that $m1$ calls to push($x$) has an amortized complexity of $2(m1)$. Let's now examine the case of the $m2$ calls of pop($k$).
+
+\bigskip
+
+\item \underline{$m2$ calls to pop($k$)}:
+\end{enumerate}
+
+For estimating the pop($k$) amortized complexity, we will consider that the $i$th call in the stack is a pop($k$) operation and that the stack has a initial state with $s$ elements in it. In this case, we have the following estimation:
+
+\Large
+\begin{align}
+\nonumber
+a_{i} &= t_{i} + \Phi(S_{i}) - \Phi(S_{i-1}) \\
+\nonumber
+a_{i} &= min(k,s) + (s- min(k,s)) - s \\
+\nonumber
+a_{i} &= 0
+\end{align}
+
+\large
+The value $min(k,s)$ represents the minimum value between the number $k$ and $s$. We need to consider this value because the minimum value between $k$ \textit{(number of elements that we are trying to pop out of the stack)} and $s$ \textit{(the total amount of elements in the stack)} will be the maximum possible value to pop out of the stack for the case described above. Considering the above result, we can conclude that $m2$ calls to pop($k$) has an amortized complexity of 0. 
+
+\bigskip
+
+Considering the results of the $m1$ calls to push($x$) and the $m2$ calls to pop($k$) and also considering that the total amortized complexity is the sum of its stages, we can conclude that the total amortized complexity of $m1$ calls to push($x$) and the $m2$ calls to pop($k$) is $2(m1)$. The maximum value that 2($m1$) can take is $n$ where $n$ is the maximal size of the stack. \textbf{Therefore we can conclude that the amortized analysis of the sequence is O(n)}.
+
+
+%----------------------------------------------------------------------------------------
+%				(3) Forth section
+%----------------------------------------------------------------------------------------
+ 
+  \section{Discusion}			% Subsection of a document
 
 \end{document}
