@@ -560,7 +560,7 @@ https://github.com/JokerswildX/T1HSK
   \section{Introduction}			% Subsection of a document
 
 %   First Paragraph
-  \large The second task of the preassignment consists of making an estimation of the amortized analisis of $m1$ calls to push($x$) and $m2$ calls to pop($k$) in a stack data structure. Its important to remember that applying the push($x$) function to a stack, pushes an item $x$ onto the top that particular stack. In contrast, applying the pop($k$) function to a stack allows us to pops $k$ entries of the stack at once. For solving this problem, we also considered an empty initial state of the stack \textit{(this means that the stack has no items pushed into the data structure before applying the first function to it)}. 
+  \large The second task of the preassignment consists of making an estimation of the amortized analisis of $m1$ calls to push($x$) and $m2$ calls to pop($k$) in a stack data structure. It is important to remember that applying the push($x$) function to a stack, pushes an item $x$ onto the top of that particular stack. In contrast, applying the pop($k$) function to a stack allows us to pop out $k$ entries of the stack at once. 
 
 \bigskip
 
@@ -578,15 +578,13 @@ To solve this task, we decide to use the known paradigm of "divide and conquer".
 
 We already know that the amortized complexity of a whole operation is the sum of the amortized complexities of its stages. Therefore, instead of estimating the total amortized complexity of $m1$ calls to push($x$) and $m2$ calls to pop($k$) we will estimate 2 different amortized complexities:
 \begin{itemize}
- \item Amortized Complexity of $m1$ calls to push($x$)
- \item Amortized Complexity of $m2$ calls to pop($k$)
+ \item Amortized Complexity of call push($x$)
+ \item Amortized Complexity of call pop($k$)
 \end{itemize}
 
 \bigskip
 
 For estimating the above complexities we also need to consider the following equation:
-
-\bigskip
 
 \begin{center}
 \Large
@@ -628,11 +626,12 @@ a_{i} &= t_{i} + \Phi(S_{i}) - \Phi(S_{i-1}) \\
 \nonumber
 a_{i} &= 1 + (s+1) - (s) \\
 \nonumber
-a_{i} &= 2
+a_{i} &= 2 \\
+\nonumber
 \end{align}
 
 \large
-So we can conclude that $m1$ calls to push($x$) has an amortized complexity of $2(m1)$. Let's now examine the case of the $m2$ calls of pop($k$).
+So we can conclude that $m1$ calls to push($x$) has an amortized complexity of $2\cdot(m1)$. Let's now examine the case of the $m2$ calls of pop($k$).
 
 \bigskip
 
@@ -648,7 +647,8 @@ a_{i} &= t_{i} + \Phi(S_{i}) - \Phi(S_{i-1}) \\
 \nonumber
 a_{i} &= min(k,s) + (s- min(k,s)) - s \\
 \nonumber
-a_{i} &= 0
+a_{i} &= 0 \\
+\nonumber
 \end{align}
 
 \large
@@ -656,13 +656,23 @@ The value $min(k,s)$ represents the minimum value between the number $k$ and $s$
 
 \bigskip
 
-Considering the results of the $m1$ calls to push($x$) and the $m2$ calls to pop($k$) and also considering that the total amortized complexity is the sum of its stages, we can conclude that the total amortized complexity of $m1$ calls to push($x$) and the $m2$ calls to pop($k$) is $2(m1)$. The maximum value that 2($m1$) can take is $n$ where $n$ is the maximal size of the stack. \textbf{Therefore we can conclude that the amortized analysis of the sequence is O(n)}.
+Considering the results of the $m1$ calls to push($x$) and the $m2$ calls to pop($k$) and also considering that the total amortized complexity is the sum of its stages, we can conclude that the total amortized complexity of $m1$ calls to push($x$) and the $m2$ calls to pop($k$) is $2\cdot(m1)$. The maximum value that $2\cdot(m1)$ can take is $n$ where $n$ is the maximal size of the stack. \textbf{Therefore we can conclude that the amortized analysis of the sequence is O(n)}.
 
 
 %----------------------------------------------------------------------------------------
-%				(3) Forth section
+%				(4) Forth section
 %----------------------------------------------------------------------------------------
  
   \section{Discusion}			% Subsection of a document
+
+When comparing the result of the amortized complexity analysis obtained in section 3 ( complexity O($n$) ) with the result of the worst case complexity analysis ( complexity O($n^2$) ), we can infer the following conclusions:
+
+\begin{itemize}
+   \item The worst case complexity analysis is much more pessimistic than the amortized complexity analysis
+   \item Certainly, the amortized analysis is more accurate than the worst case complexity analysis, however, define an adequate potential function can be really challenging in some specific cases (requires some previous experience)
+   \item Considering the fact that choosing a potential function can be sometimes challenging, estimating an amortized complexity can take more time than estimating the worst case complexity
+\end{itemize}
+
+In conclusion, the amortized complexity analysis is a very helpful and also more precise method for estimating an algorithm complexity than the worst case complexity method. However, in some cases could be a little more challenging to estimate,  therefore I strongly recommend to consider the final goal of the complexity estimation before deciding which method its better to use in a particular case.
 
 \end{document}
