@@ -38,9 +38,7 @@ An example of the output of the program is the following:
 
 **Information about the code**:
 - Programmed using python 3.5.1
-- The program includes two classes:
-  -  
 
 **Usage**:
 For running the code, just use the following command:
-python Task1.py
+  python Task1.py
