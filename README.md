@@ -1,7 +1,7 @@
 
 **Description**:
 
-The code included in the "Task.py" python script, help us to test that the **amortized complexity** of moving (n-1) times from one node to the next one by using the **inorder** method in a binary tree is $2(x-1)$
+The code included in the "Task.py" python script, help us to test that the **amortized complexity** of moving (n-1) times from one node to the next one by using the **inorder** method in a binary tree is 2(x-1)
 
 The program generates random binary trees and then, transverse it by using the inorder method. Finally, the program returns a table with the number of steps used to transverse the tree in addition with the number of nodes included in the random tree generated. 
 
